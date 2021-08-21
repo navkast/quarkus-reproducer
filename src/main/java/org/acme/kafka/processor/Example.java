@@ -16,4 +16,11 @@ public class Example {
   public CompletionStage<Void> process(Message<String> msg) {
     return msg.ack();
   }
+
+//  @Incoming("topic1")
+//  @Incoming("topic2")
+//  @Blocking
+//  public void process(String msg) {
+//    System.out.println("msg: " + msg);
+//  }
 }
